@@ -1,2 +1,129 @@
-# My_c_codes
-Codes in C programming 
+
+   WHILE LOOP PROGRAMS
+
+// 1. Print numbers from 1 to 5
+int main1() {
+    int i = 1;
+    while (i <= 5) {
+        printf("%d ", i);
+        i++;
+    }
+    return 0;
+}
+// Output: 1 2 3 4 5
+
+
+// 2. Sum of numbers from 1 to 10
+int main2() {
+    int n = 1, sum = 0;
+    while (n <= 10) {
+        sum += n;
+        n++;
+    }
+    printf("Sum = %d", sum);
+    return 0;
+}
+// Output: Sum = 55
+
+
+// 3. Print even numbers up to 20
+int main3() {
+    int num = 2;
+    while (num <= 20) {
+        printf("%d ", num);
+        num += 2;
+    }
+    return 0;
+}
+// Output: 2 4 6 8 10 12 14 16 18 20
+
+
+// 4. Factorial of 5
+int main4() {
+    int i = 1, fact = 1;
+    while (i <= 5) {
+        fact *= i;
+        i++;
+    }
+    printf("Factorial = %d", fact);
+    return 0;
+}
+// Output: Factorial = 120
+
+
+// 5. Print odd numbers up to 10
+int main5() {
+    int i = 1;
+    while (i <= 10) {
+        if (i % 2 != 0)
+            printf("%d ", i);
+        i++;
+    }
+    return 0;
+}
+// Output: 1 3 5 7 9
+
+
+   DO-WHILE LOOP PROGRAMS
+
+// 1. Print numbers from 1 to 5
+int main6() {
+    int i = 1;
+    do {
+        printf("%d ", i);
+        i++;
+    } while (i <= 5);
+    return 0;
+}
+// Output: 1 2 3 4 5
+
+
+// 2. Factorial of 5
+int main7() {
+    int n = 5, fact = 1;
+    do {
+        fact *= n;
+        n--;
+    } while (n > 0);
+    printf("Factorial = %d", fact);
+    return 0;
+}
+// Output: Factorial = 120
+
+
+// 3. Print even numbers up to 20
+int main8() {
+    int i = 2;
+    do {
+        printf("%d ", i);
+        i += 2;
+    } while (i <= 20);
+    return 0;
+}
+// Output: 2 4 6 8 10 12 14 16 18 20
+
+
+// 4. Sum of numbers from 1 to 10
+int main9() {
+    int i = 1, sum = 0;
+    do {
+        sum += i;
+        i++;
+    } while (i <= 10);
+    printf("Sum = %d", sum);
+    return 0;
+}
+// Output: Sum = 55
+
+
+// 5. Print odd numbers up to 10
+int main10() {
+    int i = 1;
+    do {
+        if (i % 2 != 0)
+            printf("%d ", i);
+        i++;
+    } while (i <= 10);
+    return 0;
+}
+// Output: 1 3 5 7 9
